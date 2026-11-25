@@ -1,0 +1,27 @@
+name: AturanServer
+version: '1.0.0'
+main: me.aturanserver.AturanServer
+api-version: '26.1'
+description: World border, End nonaktif, nametag hilang, chat nonaktif, hard permanen, duduk, teleport acak, ban saat mati
+commands:
+  chat:
+    description: Aktifkan / nonaktifkan chat
+    usage: /chat <on|off>
+    permission: aturanserver.admin
+  aturan:
+    description: Muat ulang konfigurasi
+    usage: /aturan reload
+    permission: aturanserver.admin
+permissions:
+  aturanserver.admin:
+    description: Boleh memakai /chat dan /aturan
+    default: op
+  aturanserver.bypass.chat:
+    description: "Tetap bisa chat saat chat dinonaktifkan (tidak ada yang punya secara default, termasuk OP)"
+    default: false
+  aturanserver.bypass.ban:
+    description: Tidak kena ban saat mati
+    default: false
+  aturanserver.bypass.end:
+    description: Boleh masuk The End
+    default: false

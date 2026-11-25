@@ -1,0 +1,49 @@
+# ===== AturanServer =====
+
+border:
+  overworld: 8000        # ukuran sisi dalam blok (8000 = 8k x 8k, dari -4000 sampai 4000)
+  nether: 1000           # 1000 = 1k x 1k (dari -500 sampai 500)
+  peringatan-jarak: 50   # layar memerah saat sedekat ini dari batas
+
+difficulty:
+  paksa-hard: true       # semua dunia dipaksa Hard (dicek tiap detik)
+
+end:
+  nonaktif: true         # portal End tidak bisa dipakai / diaktifkan
+
+chat:
+  aktif: false           # false = chat mati untuk semua (juga OP). Ubah lewat /chat on|off
+  perintah-diblokir:     # perintah pesan yang ikut diblokir saat chat mati
+    - msg
+    - tell
+    - w
+    - whisper
+    - t
+    - m
+    - pm
+    - r
+    - reply
+    - me
+    - say
+    - teammsg
+    - tm
+    - emsg
+    - etell
+    - ewhisper
+    - er
+
+nametag:
+  sembunyikan: true      # nama di atas kepala pemain disembunyikan
+
+teleport:
+  join-pertama: true     # teleport acak saat join pertama kali
+  setelah-mati: true     # teleport acak setelah mati (hanya kalau tidak punya bed/anchor)
+  radius: 3500           # jarak maksimal dari 0,0 (otomatis dibatasi oleh border)
+  proteksi-detik: 10     # proteksi jatuh/api/lava setelah teleport
+
+ban:
+  detik: 15              # lama ban saat mati (0 = tanpa ban)
+
+duduk:
+  aktif: false           # dimatikan karena server sudah punya GSit. Ubah ke true kalau GSit dihapus
+  y-offset: 0.0          # naik/turunkan posisi duduk kalau kurang pas
